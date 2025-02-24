@@ -1,0 +1,14 @@
+/* bugSolution.css */
+/* Instead of using calc(50% - 10vw), try to use a different approach */
+.element {
+  width: 50%;
+  margin-left: 5vw;
+}
+
+/* Or use a media query if viewport width affects the calculations significantly */
+@media (min-width: 768px) {
+  .element {
+    width: 40%; /* Adjust the width as needed */
+  }
+}
+/*This example might vary depending on your specific situation,  but the general idea is to avoid mixing percentage and viewport units directly inside calc()*/
